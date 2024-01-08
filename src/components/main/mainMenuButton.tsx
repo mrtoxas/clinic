@@ -8,7 +8,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/shadcn/ui/sheet"
-import { Navbar } from "@/components/main/nav/navMobile"
+import { Navbar } from "@/components/main/navMobile"
 
 export const MainMenuButton = () => {
 	return (

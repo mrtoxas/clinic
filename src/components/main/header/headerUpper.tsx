@@ -1,4 +1,3 @@
-import { Container } from "@/components/ui/container"
 import Image from 'next/image'
 import Link from 'next/link'
 import { MapPinIcon, Clock9Icon } from "@/components/ui/icons"
@@ -7,7 +6,7 @@ const logoAltText = `${process.env.COMPANY_NAME} logo`;
 
 export const HeaderUpper = () => {
   return (
-    <Container className="flex justify-between items-center px-4 py-4">
+    <div className="container flex justify-between items-center py-4">
       <div className="m-auto sm:m-0">
         <Link href="/">
           <Image
@@ -15,7 +14,7 @@ export const HeaderUpper = () => {
             alt={logoAltText}
             width={240}
             height={67}
-            priority="high"
+            priority={true}
           />
         </Link>
       </div>
@@ -40,6 +39,6 @@ export const HeaderUpper = () => {
           </div>
         </div>
       </div>
-    </Container>
+    </div>
   )
 }
