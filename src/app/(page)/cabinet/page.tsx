@@ -1,3 +1,13 @@
-export default function ContactsPage() {
-  return <div>Contacts Page</div>
+import { auth } from "@/auth"
+
+export default async function ContactsPage() {
+  const session = await auth()
+  return (
+    <>
+      <div>Cabitet Page</div>
+      <div>
+        {JSON.stringify(session)}
+      </div>
+    </>
+  )
 }

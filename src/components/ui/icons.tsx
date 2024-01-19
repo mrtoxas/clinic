@@ -5,6 +5,11 @@ import {
     SearchIcon,
     MenuIcon,
     UserIcon,
+    EyeIcon,
+    EyeOffIcon,
+    HomeIcon,    
+    Loader2Icon,
+    LogOutIcon,
 } from "lucide-react";
 
 export { 
@@ -14,4 +19,9 @@ export {
     SearchIcon,
     MenuIcon,
     UserIcon,
+    EyeIcon,
+    EyeOffIcon,
+    HomeIcon,  
+    Loader2Icon,  
+    LogOutIcon,
 };

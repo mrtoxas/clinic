@@ -1,6 +1,8 @@
 import { ShoppingCartButton } from "@/components/main/buttons/shoppingCartButton"
 import { UserProfileButton } from "@/components/main/buttons/userProfileButton"
 import { SearchButton } from "@/components/main/buttons/searchButton"
+import { LogoutButton } from "@/components/main/buttons/logoutButton"
+import { ModeToggle } from "@/components/ui/modeToggle"
 
 export const HeaderLowerActions = () => {
   const ActionItem = ({ children }: { children: JSX.Element }) => {
@@ -13,15 +15,18 @@ export const HeaderLowerActions = () => {
 
   return (
     <div className="flex gap-2 h-full items-center">
+     <ActionItem>
+        <SearchButton />
+      </ActionItem>
       <ActionItem>
         <ShoppingCartButton />
       </ActionItem>
       <ActionItem>
         <UserProfileButton />
-      </ActionItem>
+      </ActionItem>     
       <ActionItem>
-        <SearchButton />
-      </ActionItem>
+        <LogoutButton />
+      </ActionItem>               
     </div>
   )
 }
