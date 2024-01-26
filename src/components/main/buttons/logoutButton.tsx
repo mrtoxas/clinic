@@ -7,7 +7,9 @@ export const LogoutButton = async () => {
 		<form action={async () => {
 			"use server";
 
-			await signOut()
+			await signOut({
+				redirectTo: "/"
+			})
 		}}>
 			<Button variant="ghost" size="icon" className="bg-transparent hover:bg-transparent" aria-label="Search button">
 				<LogOutIcon size={"22"} className="text-primary-foreground" />
